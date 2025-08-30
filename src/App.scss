@@ -1,13 +1,13 @@
-// App.scss
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$primary-color: #4cafef;
-$success-color: #4caf50;
+$dark-green-color: #092c1d;
+$light-green-color: #4caf50;
 $danger-color: #e74c3c;
 $light-gray: #f9f9f9;
 $border-color: #ddd;
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #f0f2f5;
   margin: 0;
   padding: 20px;
@@ -23,7 +23,7 @@ body {
 
   h2 {
     text-align: center;
-    color: $primary-color;
+    color: $dark-green-color;
   }
 }
 
@@ -39,15 +39,16 @@ body {
     border-radius: 6px;
     font-size: 14px;
     transition: border-color 0.3s;
+    font-family: "Poppins", sans-serif;
 
     &:focus {
-      border-color: $primary-color;
+      border-color: $dark-green-color;
       outline: none;
     }
   }
 
   button {
-    background: $primary-color;
+    background: $dark-green-color;
     color: white;
     padding: 10px 14px;
     border: none;
@@ -57,7 +58,7 @@ body {
     transition: background 0.3s;
 
     &:hover {
-      background: darken($primary-color, 10%);
+      background: darken($dark-green-color, 10%);
     }
   }
 }
@@ -78,7 +79,7 @@ body {
     transition: background 0.3s;
 
     &:hover {
-      background: $primary-color;
+      background: $dark-green-color;
       color: white;
     }
   }
@@ -112,12 +113,12 @@ body {
 
       h3 {
         text-decoration: line-through;
-        color: $success-color;
+        color: $light-green-color;
       }
     }
 
     button {
-      background: $success-color;
+      background: $light-green-color;
       color: white;
       padding: 6px 12px;
       border: none;
@@ -126,7 +127,7 @@ body {
       font-size: 13px;
 
       &:hover {
-        background: darken($success-color, 10%);
+        background: darken($light-green-color, 10%);
       }
     }
   }

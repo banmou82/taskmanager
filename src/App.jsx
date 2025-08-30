@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [newTasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("All");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
   useEffect(() => {
-    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    const savedTasks = JSON.parse(localStorage.getItem("newTasks")) || [];
     setTasks(savedTasks);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+    localStorage.setItem("tasks", JSON.stringify(newTasks));
+  }, [newTasks]);
 
   const addTask = () => {
     if (!title.trim()) return;
@@ -24,20 +24,20 @@ function App() {
       description,
       completed: false,
     };
-    setTasks([...tasks, newTask]);
+    setTasks([...newTasks, newTask]);
     setTitle("");
     setDescription("");
   };
 
   const toggleTask = (id) => {
     setTasks(
-      tasks.map((task) =>
+      newTasks.map((task) =>
         task.id === id ? { ...task, completed: !task.completed } : task
       )
     );
   };
 
-  const filteredTasks = tasks.filter((task) => {
+  const filteredTasks = newTasks.filter((task) => {
     if (filter === "Completed") return task.completed;
     if (filter === "Pending") return !task.completed;
     return true;
@@ -66,8 +66,8 @@ function App() {
       {/* Filter Buttons */}
       <div className="filters">
         <button onClick={() => setFilter("All")}>All</button>
+        <button onClick={() => setFilter("Pending")}>Pending...</button>
         <button onClick={() => setFilter("Completed")}>Completed</button>
-        <button onClick={() => setFilter("Pending")}>Pending</button>
       </div>
 
       {/* Task List */}
