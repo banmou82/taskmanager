@@ -1,12 +1,37 @@
-# React + Vite
+# 🧭 Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Task Management Application** built with **React**, **Vite**, and **SCSS**.  
+Easily manage your daily tasks — add, edit, delete, mark completed, and stay organized effortlessly.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [Task Manager App on Vercel](https://taskmanager-alpha-three.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ➕ Add new tasks with ease  
+- 📝 Edit existing tasks anytime  
+- ✅ Mark tasks as completed or active  
+- 🗑️ Delete tasks when no longer needed  
+- 🔍 Search and filter tasks quickly  
+- 💾 Local storage support — your data stays even after refresh  
+- 💅 Beautiful UI with SCSS styling  
+- ⚡ Blazing-fast performance using React + Vite  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React + Vite  
+- **Styling:** SCSS  
+- **State Management:** React Hooks (`useState`, `useEffect`)  
+- **Data Storage:** Browser localStorage  
+- **Hosting:** Vercel  
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/banmou82/task-manager-app.git
